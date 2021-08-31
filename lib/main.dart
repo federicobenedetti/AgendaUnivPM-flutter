@@ -22,7 +22,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Agenda UnivPM',
       theme: ThemeData(
-        primarySwatch: Colors.red,
+          primarySwatch: Colors.red,
+          scaffoldBackgroundColor: Colors.white,
+          backgroundColor: Colors.white
       ),
       initialRoute: '/',
       routes: {
