@@ -33,11 +33,11 @@ class _DettaglioCorsoState extends State<DettaglioCorso> {
             ),
             const Spacer(),
             ElevatedButton(
-              child: const Text("Disiscriviti dal corso"),
+              child: const Text("DISISCRIVITI DAL CORSO"),
               onPressed: () {},
             ),
             ElevatedButton(
-              child: const Text("Iscriviti al corso"),
+              child: const Text("ISCRIVITI AL CORSO"),
               onPressed: () {},
             )
           ],

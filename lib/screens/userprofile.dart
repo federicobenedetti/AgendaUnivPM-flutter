@@ -1,3 +1,8 @@
+
+import 'package:agendaunivpm_f/screens/faq.dart';
+import 'package:agendaunivpm_f/screens/lessoncalendar.dart';
+import 'package:agendaunivpm_f/screens/login.dart';
+import 'package:agendaunivpm_f/screens/sendfeedback.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -28,19 +33,112 @@ class _UserProfileState extends State<UserProfile> {
             "Questa sezione mostra lo stato della tua carriera universitaria. Potrai quindi visualizzare la tua matricola, inviare un feedback per migliorare l'app o visualizzare le FAQ per ulteriori chiarimenti."
         ),
         const SizedBox(height: 30),
-        CircleAvatar(
-          radius: 50,
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(50.0),
-            child: Text(
-                "MR",
-              style:
-              TextStyle(
-                  fontSize: 38
-              )
+        Row(
+          children: [
+            Column(
+              children: [
+                CircleAvatar(
+                    radius: 50,
+                    child: ClipRRect(
+                        borderRadius: BorderRadius.circular(50.0),
+                        child: Text(
+                            "MR",
+                            style:
+                            TextStyle(
+                                fontSize: 38
+                            )
+                        )
+                    )
+                )
+              ],
+            ),
+            Column(
+              children: [
+                Row(
+                  children: [
+                    Text(
+                        "Mario Rossi",
+                      style: TextStyle(
+                        fontSize: 22
+                      ),
+                    )
+                  ],
+                ),
+                Row(
+                  children: [
+                    Text("S123456",
+                      style: TextStyle(
+                        fontSize: 14
+                      ),
+                    )
+                  ],
+                )
+              ],
             )
+          ],
+        ),
+        const SizedBox(height: 20),
+        Text.rich(
+          TextSpan(
+            children: [
+              WidgetSpan(child: Icon(Icons.email, color: Colors.grey)),
+              TextSpan(text: "mario.rossi@gmail.com", style: TextStyle(fontSize: 18)),
+            ]
           )
-        )
+        ),
+        const SizedBox(height: 10),
+        Text.rich(
+            TextSpan(
+                children: [
+                  WidgetSpan(child: Icon(Icons.phone, color: Colors.grey)),
+                  TextSpan(text: "+39 321654987", style: TextStyle(fontSize: 18)),
+                ]
+            )
+        ),
+        const SizedBox(height: 10),
+        Text.rich(
+            TextSpan(
+                children: [
+                  WidgetSpan(child: Icon(Icons.hourglass_bottom, color: Colors.grey)),
+                  TextSpan(text: "2° Anno", style: TextStyle(fontSize: 18)),
+                ]
+            )
+        ),
+        const SizedBox(height: 10),
+        Text.rich(
+            TextSpan(
+                children: [
+                  WidgetSpan(child: Icon(Icons.euro, color: Colors.grey)),
+                  TextSpan(text: "Situazione tasse: regolare", style: TextStyle(fontSize: 18)),
+                ]
+            )
+        ),
+        Spacer(),
+        ElevatedButton(
+            onPressed: () {
+
+            },
+            child: Text("CALENDARIO LEZIONI")
+        ),
+        ElevatedButton(
+            onPressed: () {
+
+            },
+            child: Text("FAQ")
+        ),
+        ElevatedButton(
+            onPressed: () {
+              // Navigator.pushNamed(context, "/first");
+            },
+            child: Text("FEEDBACK")
+        ),
+        ElevatedButton(
+            onPressed: () {
+             //  Navigator.pushReplacementNamed(context, '/login');
+            },
+            child: Text("LOGOUT")
+        ),
+
       ],
     ),
 

@@ -43,7 +43,7 @@ class _DettaglioLezioneState extends State<DettaglioLezione> {
               ),
               const Spacer(),
               ElevatedButton(
-                child: const Text("Vai al corso"),
+                child: const Text("VAI AL CORSO"),
                 onPressed: () {
                   Navigator.push(
                     context,
@@ -52,7 +52,7 @@ class _DettaglioLezioneState extends State<DettaglioLezione> {
                 },
               ),
               ElevatedButton(
-                child: const Text("Vai allo streaming"),
+                child: const Text("VAI ALLO STREAMING"),
                 onPressed: () {
                   Navigator.push(
                     context,

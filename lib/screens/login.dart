@@ -39,10 +39,10 @@ class _LoginState extends State<Login> {
                       const SizedBox(height: 50),
                       ElevatedButton.icon(
                           onPressed: () {
-                            Navigator.pushReplacementNamed(context, '/dettagliolezione');
+                            Navigator.pushReplacementNamed(context, '/userprofile');
                           },
                           icon: const Icon(Icons.android),
-                          label: const Text("Accedi")
+                          label: const Text("ACCEDI")
                       ),
                       const Spacer(),
                       const Text(
