@@ -13,7 +13,7 @@ class _LoginState extends State<Login> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Agenda UnivPM"),
+        title: const Text("Agenda UnivPM"),
       ),
         body: Padding(
           padding: EdgeInsets.all(15.0),
@@ -23,29 +23,29 @@ class _LoginState extends State<Login> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
-                      SizedBox(height: 50),
+                      const SizedBox(height: 50),
                       Image.asset(
                         "images/univpm.png",
                         width: 200,
                       ),
-                      SizedBox(height: 30),
-                      Text("Agenda UnivPM",
+                      const SizedBox(height: 30),
+                      const Text("Agenda UnivPM",
                           style:
                           TextStyle(
                             fontSize: 22,
                             color: Colors.black
                           )
                       ),
-                      SizedBox(height: 50),
+                      const SizedBox(height: 50),
                       ElevatedButton.icon(
                           onPressed: () {
-                            Navigator.pushReplacementNamed(context, '/userprofile');
+                            Navigator.pushReplacementNamed(context, '/dettagliolezione');
                           },
-                          icon: Icon(Icons.android),
-                          label: Text("Accedi")
+                          icon: const Icon(Icons.android),
+                          label: const Text("Accedi")
                       ),
-                      Spacer(),
-                      Text(
+                      const Spacer(),
+                      const Text(
                           'All rights reserved - Copyright Federico Benedetti',
                           style:
                           TextStyle(
@@ -53,7 +53,7 @@ class _LoginState extends State<Login> {
                               color: Colors.black
                           )
                       ),
-                      SizedBox(height: 20)
+                      const SizedBox(height: 20)
                     ],
                   )
               )

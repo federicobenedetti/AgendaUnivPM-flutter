@@ -12,64 +12,36 @@ class _UserProfileState extends State<UserProfile> {
   int _currentIndex = 0;
 
   static List<Widget> _pages = <Widget>[
-    Container(
-      child: Column(
-        children: <Widget>[
-          SizedBox(
-            width: double.infinity,
-            child: Container(
-              child: Text(
-                  "Profilo",
-                  textAlign: TextAlign.left,
-                  style:
-                  TextStyle(
-                      fontSize: 22,
-                      color: Colors.black
-                  )
-              ),
-            ),
-          ),
-          SizedBox(height: 10),
-          Text(
-              "Questa sezione mostra lo stato della tua carriera universitaria. Potrai quindi visualizzare la tua matricola, inviare un feedback per migliorare l'app o visualizzare le FAQ per ulteriori chiarimenti."
-          ),
-          SizedBox(height: 20),
-          Align(
-            alignment: Alignment.centerLeft,
-            child: Container(
-                child: Row(
-                    children: <Widget>[
-                      CircleAvatar(
-                        radius: 50.0,
-                        child: ClipRRect(
-                          child: Text("MR",
-                              style:
-                              TextStyle(
-                                  fontSize: 38
-                              )),
-                          borderRadius: BorderRadius.circular(50.0),
-                        ),
-                      ),
-                      Column(
-                        children: <Widget>[
-                          Text("Mario Rossi",
-                            textAlign: TextAlign.left,
-                            style:
-                            TextStyle(
-                                fontSize: 28
-                            ),
-                          ),
-                          Text("S123456",
-                            textAlign: TextAlign.left,
-                          )
-                        ],
-                      )
-                    ]
-                )
-            ),
-          ),
-        ],
-      ),
+    Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        const Text(
+            "Profilo",
+            style:
+            TextStyle(
+                fontSize: 22,
+                color: Colors.black
+            )
+        ),
+        const SizedBox(height: 10),
+        const Text(
+            "Questa sezione mostra lo stato della tua carriera universitaria. Potrai quindi visualizzare la tua matricola, inviare un feedback per migliorare l'app o visualizzare le FAQ per ulteriori chiarimenti."
+        ),
+        const SizedBox(height: 30),
+        CircleAvatar(
+          radius: 50,
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(50.0),
+            child: Text(
+                "MR",
+              style:
+              TextStyle(
+                  fontSize: 38
+              )
+            )
+          )
+        )
+      ],
     ),
 
     Container(
@@ -123,7 +95,7 @@ class _UserProfileState extends State<UserProfile> {
           ],
         )
     ),
-    
+
     Container(
         child: Column(
           children: <Widget>[
@@ -155,7 +127,7 @@ class _UserProfileState extends State<UserProfile> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Agenda UnivPM"),
+        title: const Text("Agenda UnivPM"),
       ),
       body: Padding(
         padding: EdgeInsets.all(15.0),
@@ -164,28 +136,29 @@ class _UserProfileState extends State<UserProfile> {
       bottomNavigationBar: BottomNavigationBar(
           items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(
-                icon: Icon(Icons.account_circle),
+                icon: const Icon(Icons.account_circle),
                 label: 'Profilo',
                 backgroundColor: Colors.red,
             ),
             BottomNavigationBarItem(
-                icon: Icon(Icons.list),
+                icon: const Icon(Icons.list),
                 label: 'Corsi',
                 backgroundColor: Colors.red
             ),
             BottomNavigationBarItem(
-                icon: Icon(Icons.bookmarks),
+                icon: const Icon(Icons.bookmarks),
                 label: 'Preferiti',
                 backgroundColor: Colors.red
             ),
             BottomNavigationBarItem(
-                icon: Icon(Icons.menu_book_sharp),
+                icon: const Icon(Icons.menu_book_sharp),
                 label: 'Lezioni',
                 backgroundColor: Colors.red
             )
           ],
           onTap: onTabTapped, // new
           currentIndex: _currentIndex,
+
       ),
     ); // Scaffold
   }

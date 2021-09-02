@@ -12,10 +12,10 @@ import 'package:agendaunivpm_f/screens/userprofile.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(AgendaUnivpm());
 }
 
-class MyApp extends StatelessWidget {
+class AgendaUnivpm extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
