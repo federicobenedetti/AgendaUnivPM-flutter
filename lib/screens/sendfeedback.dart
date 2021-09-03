@@ -1,4 +1,4 @@
-import 'package:agendaunivpm_f/screens/userprofile.dart';
+import 'package:agendaunivpm_f/screens/navbar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -64,7 +64,7 @@ class _SendFeedbackState extends State<SendFeedback> {
                 onPressed: () {
                   Navigator.pushReplacement(
                     context,
-                    MaterialPageRoute(builder: (context) => UserProfile()),
+                    MaterialPageRoute(builder: (context) => Navbar()),
                   );
                 },
               ),

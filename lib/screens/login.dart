@@ -1,4 +1,4 @@
-import 'package:agendaunivpm_f/screens/userprofile.dart';
+import 'package:agendaunivpm_f/screens/navbar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -39,7 +39,7 @@ class _LoginState extends State<Login> {
                       const SizedBox(height: 50),
                       ElevatedButton.icon(
                           onPressed: () {
-                            Navigator.pushReplacementNamed(context, '/userprofile');
+                            Navigator.pushReplacementNamed(context, '/navbar');
                           },
                           icon: const Icon(Icons.android),
                           label: const Text("ACCEDI")

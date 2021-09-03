@@ -8,7 +8,8 @@ import 'package:agendaunivpm_f/screens/lessoncalendar.dart';
 import 'package:agendaunivpm_f/screens/listacorsi.dart';
 import 'package:agendaunivpm_f/screens/login.dart';
 import 'package:agendaunivpm_f/screens/streaminglezione.dart';
-import 'package:agendaunivpm_f/screens/userprofile.dart';
+import 'package:agendaunivpm_f/screens/navbar.dart';
+import 'package:agendaunivpm_f/screens/user.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -29,7 +30,8 @@ class AgendaUnivpm extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => Login(),
-        '/userprofile': (context) => UserProfile(),
+        '/userpage': (context) => UserPage(),
+        '/navbar': (context) => Navbar(),
         '/faq': (context) => Faq(),
         '/feedback': (context) => SendFeedback(),
         '/lessoncalendar': (context) => LessonCalendar(),
