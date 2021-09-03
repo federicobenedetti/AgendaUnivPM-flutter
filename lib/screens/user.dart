@@ -187,7 +187,7 @@ class _UserPageState extends State<UserPage> {
         ),
         ElevatedButton(
             onPressed: () {
-              Navigator.pushReplacementNamed(context, '/login');
+              Navigator.pushReplacementNamed(context, '/');
             },
             child: Text("LOGOUT")
         ),
