@@ -1,3 +1,4 @@
+import 'package:agendaunivpm_f/widgets/cardfaq.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -10,21 +11,28 @@ class Faq extends StatefulWidget {
 class _FaqState extends State<Faq> {
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.all(15.0),
-      child: Column(
-        children: <Widget>[
-          SizedBox(
-            width: double.infinity,
-            child: Container(
-              child: Text("FAQ",
-                  textAlign: TextAlign.left,
-                  style: TextStyle(fontSize: 22, color: Colors.black)),
-            ),
+    return Scaffold(
+        appBar: AppBar(
+          title: Text("Agenda UnivPM"),
+        ),
+        body: Padding(
+          padding: EdgeInsets.all(15.0),
+          child: Column(
+            children: <Widget>[
+              SizedBox(
+                width: double.infinity,
+                child: Container(
+                  child: Text("FAQ",
+                      textAlign: TextAlign.left,
+                      style: TextStyle(fontSize: 22, color: Colors.black)),
+                ),
+              ),
+              SizedBox(height: 10),
+              ListView(
+                children: [CardFaq()],
+              )
+            ],
           ),
-          SizedBox(height: 10)
-        ],
-      ),
-    ); // Scaffold
+        )); // Scaffold
   }
 }

@@ -37,17 +37,9 @@ class _UserPageState extends State<UserPage> {
                 ),
                 Column(
                   children: [
-                    Row(
-                      mainAxisSize: MainAxisSize.max,
-                      children: [
-                        Container(
-                          color: Colors.blue,
-                          child: Text(
-                            "Mario Rossi",
-                            style: TextStyle(fontSize: 22),
-                          ),
-                        ),
-                      ],
+                    Text(
+                      "Mario Rossi",
+                      style: TextStyle(fontSize: 22),
                     ),
                     Row(
                       children: [
