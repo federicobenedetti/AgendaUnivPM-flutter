@@ -19,18 +19,11 @@ class _StreamingLezioneState extends State<StreamingLezione> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              const Text(
-                  "Streaming lezione",
-                  style:
-                  TextStyle(
-                      fontSize: 22,
-                      color: Colors.black
-                  )
-              ),
+              const Text("Streaming lezione",
+                  style: TextStyle(fontSize: 22, color: Colors.black)),
               const SizedBox(height: 10),
               const Text(
-                "Verrà ora riprodotta automaticamente la lezione selezionata. I controlli a schermo non sono (ancora) disponibili."
-              ),
+                  "Verrà ora riprodotta automaticamente la lezione selezionata. I controlli a schermo non sono (ancora) disponibili."),
               const SizedBox(height: 20),
               ConstrainedBox(
                 constraints: const BoxConstraints(
@@ -43,8 +36,6 @@ class _StreamingLezioneState extends State<StreamingLezione> {
               )
             ],
           ),
-
-        )
-    ); // Scaffold
+        )); // Scaffold
   }
 }

@@ -31,31 +31,27 @@ class _NavbarState extends State<Navbar> {
       ),
       body: _pages.elementAt(_currentIndex),
       bottomNavigationBar: BottomNavigationBar(
-          items: const <BottomNavigationBarItem>[
-            BottomNavigationBarItem(
-                icon: const Icon(Icons.account_circle),
-                label: 'Profilo',
-                backgroundColor: Colors.red,
-            ),
-            BottomNavigationBarItem(
-                icon: const Icon(Icons.list),
-                label: 'Corsi',
-                backgroundColor: Colors.red
-            ),
-            BottomNavigationBarItem(
-                icon: const Icon(Icons.bookmarks),
-                label: 'Preferiti',
-                backgroundColor: Colors.red
-            ),
-            BottomNavigationBarItem(
-                icon: const Icon(Icons.menu_book_sharp),
-                label: 'Lezioni',
-                backgroundColor: Colors.red
-            )
-          ],
-          onTap: onTabTapped, // new
-          currentIndex: _currentIndex,
-
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: const Icon(Icons.account_circle),
+            label: 'Profilo',
+            backgroundColor: Colors.red,
+          ),
+          BottomNavigationBarItem(
+              icon: const Icon(Icons.list),
+              label: 'Corsi',
+              backgroundColor: Colors.red),
+          BottomNavigationBarItem(
+              icon: const Icon(Icons.bookmarks),
+              label: 'Preferiti',
+              backgroundColor: Colors.red),
+          BottomNavigationBarItem(
+              icon: const Icon(Icons.menu_book_sharp),
+              label: 'Lezioni',
+              backgroundColor: Colors.red)
+        ],
+        onTap: onTabTapped, // new
+        currentIndex: _currentIndex,
       ),
     ); // Scaffold
   }

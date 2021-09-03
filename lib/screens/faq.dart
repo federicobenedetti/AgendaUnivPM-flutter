@@ -10,8 +10,6 @@ class Faq extends StatefulWidget {
 class _FaqState extends State<Faq> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-
-    ); // Scaffold
+    return Scaffold(); // Scaffold
   }
 }

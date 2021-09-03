@@ -1,14 +1,14 @@
 import 'package:agendaunivpm_f/screens/dettagliocorso.dart';
 import 'package:agendaunivpm_f/screens/dettagliolezione.dart';
 import 'package:agendaunivpm_f/screens/faq.dart';
-import 'package:agendaunivpm_f/screens/listacorsiiscritto.dart';
-import 'package:agendaunivpm_f/screens/listalezioni.dart';
-import 'package:agendaunivpm_f/screens/sendfeedback.dart';
 import 'package:agendaunivpm_f/screens/lessoncalendar.dart';
 import 'package:agendaunivpm_f/screens/listacorsi.dart';
+import 'package:agendaunivpm_f/screens/listacorsiiscritto.dart';
+import 'package:agendaunivpm_f/screens/listalezioni.dart';
 import 'package:agendaunivpm_f/screens/login.dart';
-import 'package:agendaunivpm_f/screens/streaminglezione.dart';
 import 'package:agendaunivpm_f/screens/navbar.dart';
+import 'package:agendaunivpm_f/screens/sendfeedback.dart';
+import 'package:agendaunivpm_f/screens/streaminglezione.dart';
 import 'package:agendaunivpm_f/screens/user.dart';
 import 'package:flutter/material.dart';
 
@@ -25,8 +25,7 @@ class AgendaUnivpm extends StatelessWidget {
       theme: ThemeData(
           primarySwatch: Colors.red,
           scaffoldBackgroundColor: Colors.white,
-          backgroundColor: Colors.white
-      ),
+          backgroundColor: Colors.white),
       initialRoute: '/',
       routes: {
         '/': (context) => Login(),
@@ -45,6 +44,3 @@ class AgendaUnivpm extends StatelessWidget {
     );
   }
 }
-
-
-

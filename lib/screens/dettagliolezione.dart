@@ -21,26 +21,14 @@ class _DettaglioLezioneState extends State<DettaglioLezione> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              const Text(
-                  "Tecnologie Web",
-                  style:
-                  TextStyle(
-                      fontSize: 22,
-                      color: Colors.black
-                  )
-              ),
+              const Text("Tecnologie Web",
+                  style: TextStyle(fontSize: 22, color: Colors.black)),
+              const SizedBox(height: 10),
+              const Text("Tenuta da Luca Verdi alle ore 09:30",
+                  style: TextStyle(fontSize: 13)),
               const SizedBox(height: 10),
               const Text(
-                "Tenuta da Luca Verdi alle ore 09:30",
-                style:
-                  TextStyle(
-                    fontSize: 13
-                  )
-              ),
-              const SizedBox(height: 10),
-              const Text(
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt feugiat nunc maximus pulvinar. Duis erat eros, tincidunt et pulvinar laoreet, interdum eu risus. In dapibus eleifend ligula et ullamcorper. Morbi et tincidunt sem. Vestibulum ut facilisis turpis. Vivamus ultricies bibendum sagittis."
-              ),
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt feugiat nunc maximus pulvinar. Duis erat eros, tincidunt et pulvinar laoreet, interdum eu risus. In dapibus eleifend ligula et ullamcorper. Morbi et tincidunt sem. Vestibulum ut facilisis turpis. Vivamus ultricies bibendum sagittis."),
               const Spacer(),
               ElevatedButton(
                 child: const Text("VAI AL CORSO"),
@@ -62,8 +50,6 @@ class _DettaglioLezioneState extends State<DettaglioLezione> {
               )
             ],
           ),
-
-        )
-    ); // Scaffold
+        )); // Scaffold
   }
 }

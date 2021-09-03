@@ -1,4 +1,3 @@
-import 'package:agendaunivpm_f/screens/navbar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -12,9 +11,9 @@ class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Agenda UnivPM"),
-      ),
+        appBar: AppBar(
+          title: const Text("Agenda UnivPM"),
+        ),
         body: Padding(
           padding: EdgeInsets.all(15.0),
           child: Center(
@@ -30,35 +29,21 @@ class _LoginState extends State<Login> {
                       ),
                       const SizedBox(height: 30),
                       const Text("Agenda UnivPM",
-                          style:
-                          TextStyle(
-                            fontSize: 22,
-                            color: Colors.black
-                          )
-                      ),
+                          style: TextStyle(fontSize: 22, color: Colors.black)),
                       const SizedBox(height: 50),
                       ElevatedButton.icon(
                           onPressed: () {
                             Navigator.pushReplacementNamed(context, '/navbar');
                           },
                           icon: const Icon(Icons.android),
-                          label: const Text("ACCEDI")
-                      ),
+                          label: const Text("ACCEDI")),
                       const Spacer(),
                       const Text(
                           'All rights reserved - Copyright Federico Benedetti',
-                          style:
-                          TextStyle(
-                              fontSize: 15,
-                              color: Colors.black
-                          )
-                      ),
+                          style: TextStyle(fontSize: 15, color: Colors.black)),
                       const SizedBox(height: 20)
                     ],
-                  )
-              )
-          ),
-        )
-    ); // Scaffold
+                  ))),
+        )); // Scaffold
   }
 }

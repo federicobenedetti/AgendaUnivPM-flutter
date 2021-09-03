@@ -20,22 +20,14 @@ class _SendFeedbackState extends State<SendFeedback> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              const Text(
-                  "Feedback",
-                  style:
-                  const TextStyle(
-                      fontSize: 22,
-                      color: Colors.black
-                  )
-              ),
+              const Text("Feedback",
+                  style: const TextStyle(fontSize: 22, color: Colors.black)),
               TextField(
                 keyboardType: TextInputType.multiline,
                 maxLines: 10,
                 decoration: const InputDecoration(
                   hintText: "Scrivi il tuo feedback qui...",
-                  hintStyle: const TextStyle(
-                      color: Colors.grey
-                  ),
+                  hintStyle: const TextStyle(color: Colors.grey),
                 ),
               ),
               const SizedBox(height: 20),
@@ -44,15 +36,16 @@ class _SendFeedbackState extends State<SendFeedback> {
                   Column(
                     children: [
                       Container(
-                        margin: const EdgeInsets.only(left: 0, right: 15.0),
-                        child: const Icon(Icons.info, color: Colors.grey)
-                      )
+                          margin: const EdgeInsets.only(left: 0, right: 15.0),
+                          child: const Icon(Icons.info, color: Colors.grey))
                     ],
                   ),
                   Expanded(
                     child: Column(
                       children: [
-                        const Text( "Se hai trovato delle difficoltà, dei bug, delle funzionalità mancanti, o vuoi solo dirmi se ti piace o meno l'app, lascia un feedback!", style: TextStyle(color: Colors.grey)),
+                        const Text(
+                            "Se hai trovato delle difficoltà, dei bug, delle funzionalità mancanti, o vuoi solo dirmi se ti piace o meno l'app, lascia un feedback!",
+                            style: TextStyle(color: Colors.grey)),
                       ],
                     ),
                   )
@@ -70,8 +63,8 @@ class _SendFeedbackState extends State<SendFeedback> {
               ),
             ],
           ),
+        ));
 
-        )
-    ); /// Scaffold
+    /// Scaffold
   }
 }
