@@ -16,7 +16,7 @@ class _CardLessonState extends State<CardLesson> {
         children: [
           ListTile(
             title: const Text(
-              "Programmazione mobile",
+              "Lorem ipsum",
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
             subtitle: Text(
@@ -25,9 +25,9 @@ class _CardLessonState extends State<CardLesson> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.all(10.0),
+            padding: const EdgeInsets.all(15.0),
             child: Text(
-              'Corso di programmazione mobile, AS 2020/2021',
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempus sollicitudin nisl, pretium fringilla metus varius tincidunt. Maecenas viverra vestibulum lacinia.',
               textAlign: TextAlign.left,
               style:
                   TextStyle(fontSize: 14, color: Colors.black.withOpacity(0.6)),
@@ -37,9 +37,9 @@ class _CardLessonState extends State<CardLesson> {
             mainAxisSize: MainAxisSize.max,
             children: [
               ElevatedButton(
-                child: Text("Dettaglio"),
+                child: Text("Lezione"),
                 onPressed: () {
-                  Navigator.pushNamed(context, "/dettagliocorso");
+                  Navigator.pushNamed(context, "/dettagliolezione");
                 },
               )
             ],

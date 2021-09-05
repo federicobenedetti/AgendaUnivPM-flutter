@@ -10,14 +10,13 @@ class CardCourse extends StatefulWidget {
 class _CardCourseState extends State<CardCourse> {
   @override
   Widget build(BuildContext context) {
-
     return Card(
       clipBehavior: Clip.antiAlias,
       child: Column(
         children: [
           ListTile(
             title: const Text(
-              "Programmazione mobile",
+              "Lorem Ipsum",
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
             subtitle: Text(
@@ -26,9 +25,9 @@ class _CardCourseState extends State<CardCourse> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.all(10.0),
+            padding: const EdgeInsets.all(15.0),
             child: Text(
-              'Corso di programmazione mobile, AS 2020/2021',
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempus sollicitudin nisl, pretium fringilla metus varius tincidunt. Maecenas viverra vestibulum lacinia.',
               textAlign: TextAlign.left,
               style:
                   TextStyle(fontSize: 14, color: Colors.black.withOpacity(0.6)),

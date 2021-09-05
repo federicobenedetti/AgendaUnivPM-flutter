@@ -38,17 +38,9 @@ class _UserPageState extends State<UserPage> {
                 Column(
                   children: [
                     Text(
-                      "Mario Rossi",
-                      style: TextStyle(fontSize: 22),
+                      "   Mario Rossi\n   S123456",
+                      style: TextStyle(fontSize: 20),
                     ),
-                    Row(
-                      children: [
-                        Text(
-                          "S123456",
-                          style: TextStyle(fontSize: 14),
-                        )
-                      ],
-                    )
                   ],
                 )
               ],
