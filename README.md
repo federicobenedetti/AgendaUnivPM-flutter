@@ -10,7 +10,7 @@ Lo scopo è quello di rendere più veloce e accessibile la consultazione tramite
 
 
 ## Download
-[![](https://img.shields.io/badge/Agenda%20UnivPM-1.4-green)](https://github.com/federicobenedetti/AgendaUnivPM-kt/releases/tag/1.4)
+[![](https://img.shields.io/badge/Agenda%20UnivPM-Flutter-1.0-green)](https://github.com/federicobenedetti/AgendaUnivPM-flutter/releases/tag/1.0)
 
 
 # Interfaccia
