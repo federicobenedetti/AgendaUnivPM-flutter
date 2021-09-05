@@ -2,7 +2,13 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class CardFaq extends StatefulWidget {
-  CardFaq({Key? key}) : super(key: key);
+  final String cardFaqTitle;
+  final String cardFaqDescription;
+
+  CardFaq(
+      {Key? key, required this.cardFaqTitle, required this.cardFaqDescription})
+      : super(key: key);
+
   @override
   _CardFaqState createState() => _CardFaqState();
 }
@@ -15,34 +21,18 @@ class _CardFaqState extends State<CardFaq> {
       child: Column(
         children: [
           ListTile(
-            title: const Text(
-              "Programmazione mobile",
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-            ),
-            subtitle: Text(
-              'Mario Rossi',
-              style: TextStyle(color: Colors.black.withOpacity(0.6)),
-            ),
-          ),
+              title: Text(
+            widget.cardFaqTitle,
+            style: TextStyle(fontSize: 18, color: Colors.red),
+          )),
           Padding(
-            padding: const EdgeInsets.all(10.0),
+            padding: const EdgeInsets.all(15.0),
             child: Text(
-              'Corso di programmazione mobile, AS 2020/2021',
+              widget.cardFaqDescription,
               textAlign: TextAlign.left,
               style:
                   TextStyle(fontSize: 14, color: Colors.black.withOpacity(0.6)),
             ),
-          ),
-          ButtonBar(
-            mainAxisSize: MainAxisSize.max,
-            children: [
-              ElevatedButton(
-                child: Text("Dettaglio"),
-                onPressed: () {
-                  Navigator.pushNamed(context, "/dettagliocorso");
-                },
-              )
-            ],
           )
         ],
       ),

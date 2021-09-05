@@ -1,4 +1,4 @@
-import 'package:agendaunivpm_f/widgets/cardfaq.dart';
+import 'package:agendaunivpm_f/widgets/cardcourse.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -40,7 +40,7 @@ class _ListaCorsiState extends State<ListaCorsi> {
                   // Provide a builder function. This is where the magic happens.
                   // Convert each item into a widget based on the type of item it is.
                   itemBuilder: (context, index) {
-                    final item = CardFaq();
+                    final item = CardCourse();
                     return item;
                   },
                 ),
