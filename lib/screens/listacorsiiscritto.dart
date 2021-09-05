@@ -1,3 +1,4 @@
+import 'package:agendaunivpm_f/widgets/cardfaq.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -26,6 +27,25 @@ class _ListaCorsiIscrittoState extends State<ListaCorsiIscritto> {
             Text(
                 "Questa sezione mostra i corsi a cui sei attualmente iscritto. Entrando nel dettaglio del corso potrai scegliere di disiscriverti dal corso."),
             SizedBox(height: 20),
+            Expanded(
+              flex: 1,
+              child: SingleChildScrollView(
+                scrollDirection: Axis.vertical,
+                child: ListView.builder(
+                  physics: const NeverScrollableScrollPhysics(),
+                  scrollDirection: Axis.vertical,
+                  shrinkWrap: true,
+                  // Let the ListView know how many items it needs to build.
+                  itemCount: 10,
+                  // Provide a builder function. This is where the magic happens.
+                  // Convert each item into a widget based on the type of item it is.
+                  itemBuilder: (context, index) {
+                    final item = CardFaq();
+                    return item;
+                  },
+                ),
+              ),
+            )
           ],
         )); // Scaffold
   }

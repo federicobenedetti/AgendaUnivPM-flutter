@@ -15,35 +15,33 @@ class _CardFaqState extends State<CardFaq> {
       child: Column(
         children: [
           ListTile(
-            leading: Icon(Icons.arrow_drop_down_circle),
-            title: const Text('Card title 1'),
+            title: const Text(
+              "Programmazione mobile",
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            ),
             subtitle: Text(
-              'Secondary Text',
+              'Mario Rossi',
               style: TextStyle(color: Colors.black.withOpacity(0.6)),
             ),
           ),
           Padding(
-            padding: const EdgeInsets.all(16.0),
+            padding: const EdgeInsets.all(10.0),
             child: Text(
-              'Greyhound divisively hello coldly wonderfully marginally far upon excluding.',
-              style: TextStyle(color: Colors.black.withOpacity(0.6)),
+              'Corso di programmazione mobile, AS 2020/2021',
+              textAlign: TextAlign.left,
+              style:
+                  TextStyle(fontSize: 14, color: Colors.black.withOpacity(0.6)),
             ),
           ),
           ButtonBar(
-            alignment: MainAxisAlignment.start,
+            mainAxisSize: MainAxisSize.max,
             children: [
-              TextButton(
+              ElevatedButton(
+                child: Text("Dettaglio"),
                 onPressed: () {
-                  // Perform some action
+                  Navigator.pushNamed(context, "/dettagliocorso");
                 },
-                child: const Text('ACTION 1'),
-              ),
-              TextButton(
-                onPressed: () {
-                  // Perform some action
-                },
-                child: const Text('ACTION 2'),
-              ),
+              )
             ],
           )
         ],

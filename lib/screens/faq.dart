@@ -28,8 +28,24 @@ class _FaqState extends State<Faq> {
                 ),
               ),
               SizedBox(height: 10),
-              ListView(
-                children: [CardFaq()],
+              Expanded(
+                flex: 1,
+                child: SingleChildScrollView(
+                  scrollDirection: Axis.vertical,
+                  child: ListView.builder(
+                    physics: const NeverScrollableScrollPhysics(),
+                    scrollDirection: Axis.vertical,
+                    shrinkWrap: true,
+                    // Let the ListView know how many items it needs to build.
+                    itemCount: 10,
+                    // Provide a builder function. This is where the magic happens.
+                    // Convert each item into a widget based on the type of item it is.
+                    itemBuilder: (context, index) {
+                      final item = CardFaq();
+                      return item;
+                    },
+                  ),
+                ),
               )
             ],
           ),
