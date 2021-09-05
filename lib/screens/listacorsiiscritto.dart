@@ -36,7 +36,7 @@ class _ListaCorsiIscrittoState extends State<ListaCorsiIscritto> {
                   scrollDirection: Axis.vertical,
                   shrinkWrap: true,
                   // Let the ListView know how many items it needs to build.
-                  itemCount: 10,
+                  itemCount: 4,
                   // Provide a builder function. This is where the magic happens.
                   // Convert each item into a widget based on the type of item it is.
                   itemBuilder: (context, index) {

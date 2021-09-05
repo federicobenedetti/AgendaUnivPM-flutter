@@ -10,6 +10,7 @@ class CardCourse extends StatefulWidget {
 class _CardCourseState extends State<CardCourse> {
   @override
   Widget build(BuildContext context) {
+
     return Card(
       clipBehavior: Clip.antiAlias,
       child: Column(
